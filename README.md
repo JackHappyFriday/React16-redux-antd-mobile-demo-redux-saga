@@ -1,6 +1,6 @@
 # webpack4-React16-redux-antd-mobile2-demo-redux-saga-iconfont
 
-##如果你觉得不错，请送个我一个star(❤)
+## 如果你觉得不错，请送个我一个star(❤)
 
 :rocket: Modern starter kit for React projects.
 >1.React(16.8)  
@@ -17,7 +17,7 @@
 12.date-fns替换了moment的使用，减小文件打包体积  
 13.…… 
 
-##别名说明
+## 别名说明
  - 需要在Webstorm中配置根目录中的webstorm.config.js，来识别别名，不然Webstorm会提示警告或者错误 (Mac举例)
  > **`webstorm -> Preferences -> Languages & FrameWorks -> JavaScript -> webpack `** 将上面的文件配置到该目录
 
