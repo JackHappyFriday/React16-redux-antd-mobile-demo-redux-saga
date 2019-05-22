@@ -1,0 +1,21 @@
+@error-text-color: @error-text;
+@warn-text-color: @warn-text;
+
+.public-css {
+	display: flex;
+	align-items: center;
+	min-height: 2rem;
+	padding: 0 0.3rem;
+}
+
+.text-danger-error {
+	.public-css;
+
+	color: @warn-text-color;
+}
+
+.text-danger-warn {
+	.public-css;
+
+	color: @error-text-color;
+}

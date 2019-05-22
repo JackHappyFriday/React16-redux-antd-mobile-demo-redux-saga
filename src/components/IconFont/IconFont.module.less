@@ -1,0 +1,33 @@
+@keyframes icon-spin {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* 无限循环 */
+.iconfont-spin::before {
+	display: inline-block;
+	animation: icon-spin infinite 1s linear;
+}
+
+/* 循环2圈 */
+.iconfont-spin-1::before {
+	display: inline-block;
+	animation: icon-spin 1s linear 1s 1;
+}
+
+/* 循环2圈 */
+.iconfont-spin-2::before {
+	display: inline-block;
+	animation: icon-spin 1s linear 1s 2;
+}
+
+/* 动画将在偶数次数时反向播放动画 */
+.iconfont-spin-alternate::before {
+	display: inline-block;
+	animation: icon-spin 1s linear 1s 2 alternate;
+}

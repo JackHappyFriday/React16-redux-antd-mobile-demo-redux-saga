@@ -1,0 +1,12 @@
+/**
+  * 注意这里class的写法，最好都是已 iconfont-custom 开头，
+  * 目的是为了跟其他的class不混搅
+  */
+
+.iconfont-custom-red {
+	color: #F00;
+}
+
+.iconfont-custom-blue {
+	color: #00F;
+}

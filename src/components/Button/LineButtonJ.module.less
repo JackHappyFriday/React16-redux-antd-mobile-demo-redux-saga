@@ -1,0 +1,58 @@
+@brand-primary-j: @brand-primary;
+@delete-text-j: @error-text;
+@warn-text-j: @warn-text;
+@cancel-text-j: #FAFAFA;
+
+.public-css {
+	font-size: 1rem;
+	border-radius: 0;
+	display: inline-block;
+}
+
+.lineButtonJ-main {
+	box-sizing: border-box;
+}
+
+.button-j-info {
+	background-color: @brand-primary-j;
+	// border: 0.01rem solid @brand-primary-j !important;
+	color: #FFF;
+	.public-css;
+}
+
+.button-j-info::before {
+	border-radius: 0 !important;
+}
+
+.button-j-delete {
+	background-color: @delete-text-j;
+	// border: 0.01rem solid @delete-text-j !important;
+	color: #FFF;
+	.public-css;
+}
+
+.button-j-delete::before {
+	border-radius: 0 !important;
+}
+
+.button-j-warn {
+	background-color: @warn-text-j;
+	// border: 0.01rem solid @warn-text-j !important;
+	color: #FFF;
+	.public-css;
+}
+
+.button-j-warn::before {
+	border-radius: 0 !important;
+}
+
+.button-j-cancel {
+	background-color: @cancel-text-j;
+	// border: 0.01rem solid @cancel-text-j !important;
+	color: #333;
+	.public-css;
+}
+
+.button-j-cancel::before {
+	border-radius: 0 !important;
+}

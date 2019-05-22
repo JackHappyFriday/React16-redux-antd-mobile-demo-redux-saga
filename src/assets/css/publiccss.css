@@ -1,0 +1,87 @@
+/**
+公共css
+ */
+html {
+	box-sizing: border-box;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+/*@font-face {
+	font-family: 'Open Sans Regular';
+	src: url(../fonts/opensansregularregular.woff2) format('woff2');
+}*/
+
+body {
+	font-family: /* 'Open Sans Regular',*/ 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	font-size: 100px;
+	background-color: #FFF;
+}
+
+html, body {
+	-webkit-tap-highlight-color: transparent;
+}
+
+/* 这个不能少 */
+svg#__ANTD_MOBILE_SVG_SPRITE_NODE__ {
+	width: 0 !important;
+	height: 0 !important;
+	position: absolute !important;
+}
+
+/* 这个不能少 */
+svg#__SVG_SPRITE_NODE__ {
+	width: 0 !important;
+	height: 0 !important;
+	position: absolute !important;
+}
+
+#root {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.jp-container {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.jp-content {
+	flex-direction: column;
+	flex: 1;
+	overflow-x: hidden;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+.jp-footer {
+	width: 100vw;
+	bottom: 0;
+	height: 3rem;
+	position: fixed;
+}
+
+/* tab页面需要使用下面的公用样式 */
+.jp-tab-content {
+	flex-direction: column;
+	flex: 1;
+	overflow-x: hidden;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	margin-bottom: 3rem;
+}
+
+.jp-tab-footer {
+	width: 100vw;
+	bottom: 0;
+	height: 3rem;
+	position: fixed;
+}

@@ -1,0 +1,5 @@
+--include @babel/polyfill tools/testSetup.js tools/jsdomSetup.js
+--reporter progress
+--webpack-config config/webpack/webpack.config-test.js
+
+src/test/**/*.test.js

@@ -1,0 +1,33 @@
+# NodeJS
+node_modules
+npm-debug.log
+
+# Yarn
+yarn-error.log
+
+# coverage
+.nyc_output
+coverage
+
+# WebStorm
+.idea
+
+# macOS
+.DS_Store
+
+# project
+__trash__
+dist
+wx
+wxqa
+dd
+ddqa
+prd
+qa
+cmp
+bee
+stg
+.stylelintcache
+*.zip
+*.html
+

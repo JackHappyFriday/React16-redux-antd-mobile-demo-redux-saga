@@ -1,0 +1,53 @@
+.group-main {
+	box-sizing: border-box;
+}
+
+.item-group-main {
+	box-sizing: border-box;
+}
+
+.item-group-title {
+	padding: 0.7rem 1rem;
+	color: @color-text-grey;
+}
+
+.item-main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100%;
+
+	.item-badge {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.item-content {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		height: 100%;
+	}
+
+	.item-img {
+		width: 2rem;
+		height: 2rem;
+	}
+
+	.item-span-div {
+		display: flex;
+		margin-top: 0.5rem;
+		font-size: 1rem;
+		max-width: 33vw;
+	}
+
+	.item-span {
+		white-space: nowrap;
+		overflow: hidden;
+		word-break: break-all;
+		text-overflow: ellipsis;
+	}
+}

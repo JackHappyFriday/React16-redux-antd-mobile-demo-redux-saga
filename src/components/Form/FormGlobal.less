@@ -1,0 +1,82 @@
+
+:global {
+	.form-root-div-j {
+		overflow: hidden;
+		// margin: 0.03rem 0.1rem;
+		box-sizing: border-box;
+	}
+
+	.form-red-border-j {
+		border-bottom: 0.05rem solid #FC655F;
+		box-sizing: border-box;
+	}
+
+	.form-label-j {
+		font-size: 1rem;
+	}
+
+	.form-label-normal-j {
+		color: #333;
+	}
+
+	.form-label-disabled-j {
+		color: #BBB;
+	}
+
+	.am-list-item {
+		.am-list-line {
+			border-bottom: 1px solid #DDD;
+
+			.am-input-control {
+				/* 注意这里的写法，根据属性来控制text显示方向 */
+				input:not([name='username']) {
+					text-align: right;
+				}
+
+				input:not([name='password']) {
+					text-align: right;
+				}
+
+				input[name='username'] {
+					text-align: left;
+				}
+
+				input[name='password'] {
+					text-align: left;
+				}
+			}
+
+			.am-list-extra {
+				flex-basis: 60%;
+				color: #333;
+			}
+		}
+	}
+
+	.form-datepicker-disabled-j {
+		.am-list-item {
+			.am-list-line {
+				.am-list-extra {
+					color: #BBB;
+				}
+			}
+		}
+	}
+
+	.form-require-j {
+		color: #F00;
+		font-size: 0.7rem;
+	}
+
+	.am-list-header-css-j {
+		color: #333;
+	}
+
+	.am-list-header-css-disabled-j {
+		color: #BBB;
+	}
+
+	.am-calendar .content {
+		top: 2.7rem !important;
+	}
+}

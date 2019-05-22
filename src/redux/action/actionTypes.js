@@ -1,0 +1,6 @@
+
+export const USERDATA_IN = 'USERDATA_IN';
+
+export const USERDATA_IN_SUCCSESS = 'USERDATA_IN_SUCCSESS';
+
+export const USERDATA_IN_FAIL = 'USERDATA_IN_FAIL';

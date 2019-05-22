@@ -1,0 +1,51 @@
+@pull-refresh-background: #FAFAFA;
+
+.pullToRefresh-main {
+	box-sizing: border-box;
+}
+
+/* 本页面默认span样式 */
+.default-span {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5rem 0;
+}
+
+.pull-activate {
+	composes: default-span;
+	color: #333;
+	background-color: @pull-refresh-background;
+}
+
+.pull-deactivate {
+	composes: default-span;
+	color: #333;
+	background-color: @pull-refresh-background;
+	margin-top: -2rem;
+}
+
+.pull-release {
+	composes: default-span;
+	color: #333;
+	background-color: @pull-refresh-background;
+}
+
+.pull-finish {
+	color: #333;
+	composes: default-span;
+	background-color: #FFF;
+	margin-top: -2rem;
+}
+
+.indicator-text {
+	margin-left: 0.5rem;
+}
+
+.pull-item {
+	border-bottom: 1px solid #EEE;
+	display: flex;
+	align-items: center;
+	padding: 1rem 0;
+}

@@ -1,0 +1,65 @@
+@brand-primary-j: @brand-primary;
+
+.loading-round-main {
+	display: inline-block;
+}
+
+.loading-round-content {
+	display: flex;
+}
+
+.loading-round-dot {
+	height: 0.5rem;
+	width: 0.5rem;
+	background-color: @brand-primary-j;
+	border-radius: 50%;
+	top: -0.3rem;
+	position: absolute;
+}
+
+.loading-round-round {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	height: 5rem;
+	width: 5rem;
+	border: 0.2rem solid #0286EF;
+	border-radius: 50%;
+	animation: rounding 2s infinite;
+	-webkit-animation: rounding 2s infinite;
+}
+
+.loading-round-text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 5.4rem;
+	height: 5.4rem;
+	font-size: 1rem;
+	color: #9BCCF3;
+	position: absolute;
+}
+
+.loading-round-text-p {
+	font-size: 0.8rem;
+}
+
+@keyframes rounding {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes rounding {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}

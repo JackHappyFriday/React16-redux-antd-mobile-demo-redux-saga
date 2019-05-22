@@ -1,0 +1,184 @@
+body {
+	margin: 0;
+}
+/* 右进左出动画 */
+.right-enter, .right-appear {
+	opacity: 0.1;
+	transform: translateX(100%);
+}
+
+.right-enter-active, .right-appear-active {
+	opacity: 1;
+	transform: translateX(0);
+	transition: all 0.3s ease-in;
+}
+
+.right-enter-done {
+	opacity: 1;
+}
+
+.right-exit {
+	position: fixed;
+	background: #FFF;
+	z-index: 10000;
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.right-exit-active {
+	opacity: 0;
+	transform: translateX(100%);
+	transition: all 0.3s ease-in;
+}
+
+.right-exit-done {
+	opacity: 0;
+}
+
+/* 淡入淡出动画 */
+/*enter是入场前的刹那（点击按钮），appear指页面第一次加载前的一刹那（自动）*/
+.fade-enter, .fade-appear {
+	opacity: 0;
+}
+
+.fade-enter-active, .fade-appear-active {
+	opacity: 1;
+	transition: opacity 1s ease-in;
+}
+
+.fade-enter-done {
+	opacity: 1;
+}
+/*同理，出场前的一刹那，以下就不详细解释了，一样的道理*/
+.fade-exit {
+	opacity: 1;
+}
+
+.fade-exit-active {
+	opacity: 0;
+	transition: opacity 1s ease-in;
+}
+
+.fade-exit-done {
+	opacity: 0;
+}
+
+/* 右进左出动画,学别人的写法 */
+.am-slide-right-enter,
+.am-slide-up-appear {
+	-webkit-transform: translate(0, 100%);
+	-ms-transform: translate(0, 100%);
+	transform: translate(0, 100%);
+}
+
+.am-slide-right-enter,
+.am-slide-right-appear,
+.am-slide-right-exit {
+	-webkit-animation-duration: 0.4s;
+	animation-duration: 0.4s;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: both;
+	-webkit-animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+	animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+	-webkit-animation-play-state: paused;
+	animation-play-state: paused;
+}
+
+.am-slide-right-enter.am-slide-right-enter-active,
+.am-slide-right-appear.am-slide-right-appear-active {
+	-webkit-animation-name: amsliderightin;
+	animation-name: amsliderightin;
+	-webkit-animation-play-state: running;
+	animation-play-state: running;
+}
+
+.am-slide-right-enter-done {
+	opacity: 1;
+}
+
+.am-slide-right-exit.am-slide-right-exit-active {
+	-webkit-animation-name: amsliderightout;
+	animation-name: amsliderightout;
+	-webkit-animation-play-state: running;
+	animation-play-state: running;
+}
+
+.am-slide-right-exit-done {
+	opacity: 0;
+}
+
+@-webkit-keyframes amsliderightin {
+	0% {
+		-webkit-transform: translate(100%, 0);
+		transform: translate(100%, 0);
+	}
+
+	50% {
+		opacity: 0.2;
+		-webkit-transform: translate(50%, 0);
+		transform: translate(50%, 0);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: translate(0, 0);
+		transform: translate(0, 0);
+	}
+}
+
+@keyframes amsliderightin {
+	0% {
+		-webkit-transform: translate(100%, 0);
+		transform: translate(100%, 0);
+	}
+
+	50% {
+		opacity: 0.2;
+		-webkit-transform: translate(50%, 0);
+		transform: translate(50%, 0);
+	}
+
+	100% {
+		opacity: 1;
+		-webkit-transform: translate(0, 0);
+		transform: translate(0, 0);
+	}
+}
+
+@-webkit-keyframes amsliderightout {
+	0% {
+		-webkit-transform: translate(0, 0);
+		transform: translate(0, 0);
+	}
+
+	50% {
+		opacity: 0.2;
+		-webkit-transform: translate(50%, 0);
+		transform: translate(50%, 0);
+	}
+
+	100% {
+		opacity: 0;
+		-webkit-transform: translate(100%, 0);
+		transform: translate(100%, 0);
+	}
+}
+
+@keyframes amsliderightout {
+	0% {
+		-webkit-transform: translate(0, 0);
+		transform: translate(0, 0);
+	}
+
+	50% {
+		opacity: 0.2;
+		-webkit-transform: translate(50%, 0);
+		transform: translate(50%, 0);
+	}
+
+	100% {
+		opacity: 0;
+		-webkit-transform: translate(100%, 0);
+		transform: translate(100%, 0);
+	}
+}
