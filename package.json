@@ -58,7 +58,7 @@
     "date-fns": "^2.0.0-alpha.27",
     "history": "4.7.2",
     "intl": "^1.2.5",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "memoize-one": "^5.0.4",
     "perfectionist": "^2.4.0",
     "prop-types": "15.7.2",
